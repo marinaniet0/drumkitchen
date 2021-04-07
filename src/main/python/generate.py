@@ -27,18 +27,6 @@ def wav_to_np(filepath):
 
     return fp_arr
 
-def shift_ld(audio_features, ld_shift=0.0):
-  """Shift loudness by a number of ocatves."""
-  audio_features['loudness_db'] += ld_shift
-  return audio_features
-
-
-def shift_f0(audio_features, pitch_shift=0.0):
-  """Shift f0 by a number of ocatves."""
-  audio_features['f0_hz'] *= 2.0 ** (pitch_shift)
-  audio_features['f0_hz'] = np.clip(audio_features['f0_hz'], 0.0, librosa.midi_to_hz(110.0))
-  return audio_features
-
 def gendrumkit(input_sound, models, savepath):
     print("generating...")
 

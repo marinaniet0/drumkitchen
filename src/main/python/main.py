@@ -220,6 +220,6 @@ class drumkitchen(QDialog):
 
 if __name__ == '__main__':
     appctxt = ApplicationContext()
-    gallery = drumkitchen()
-    gallery.show()
+    window = drumkitchen()
+    window.show()
     sys.exit(appctxt.app.exec())

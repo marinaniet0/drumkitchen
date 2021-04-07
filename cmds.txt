@@ -1,5 +1,8 @@
 py -3.6 -m venv fbsenv
-call fbsenv\scripts\activate.bat
-py -3.6 pip install fbs PyQt5 PyInstaller==3.4
-py -3.6 -m fbs startproject
+call fbsenv/scripts/activate.bat
+
+# to run locally
 py -3.6 -m fbs run
+
+# to create executable - you need other things (PyInstaller, Windows SDK,...)
+py - 3.6 -m fbs freeze
