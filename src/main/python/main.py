@@ -1,18 +1,13 @@
 from fbs_runtime.application_context.PyQt5 import ApplicationContext
-from PyQt5.QtCore import (QDateTime, Qt, QTimer, QSize)
-from PyQt5.QtWidgets import (QApplication, QCheckBox, QComboBox, QDateTimeEdit,
-        QDial, QDialog, QGridLayout, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
-        QProgressBar, QPushButton, QRadioButton, QScrollBar, QSizePolicy,
-        QSlider, QSpinBox, QStyleFactory, QTableWidget, QTabWidget, QTextEdit,
-        QVBoxLayout, QWidget, QFileDialog)
-from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import (QApplication, QDialog, QGridLayout, QGroupBox, QLabel, QLineEdit,
+        QPushButton, QRadioButton, QStyleFactory, QFileDialog)
 from functools import partial
 
+import time
 import sys, os
 from play_sound import play
 import load_models
 import generate
-import spinner.spinner as sp
 
 class drumkitchen(QDialog):
 
